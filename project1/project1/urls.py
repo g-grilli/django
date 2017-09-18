@@ -9,6 +9,8 @@ from zinnia.sitemaps import CategorySitemap
 from zinnia.sitemaps import EntrySitemap
 from zinnia.sitemaps import TagSitemap
 
+
+
 sitemaps = {
     'tags': TagSitemap,
     'blog': EntrySitemap,
@@ -24,7 +26,7 @@ urlpatterns = [
         sitemap,
         {'sitemaps': sitemaps},
         name='django.contrib.sitemaps.views.sitemap'),
-    url(r'^portfolio/', include('resume.urls')),
+    url(r'^resume/', include('resume.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^weblog/', include('zinnia.urls')),

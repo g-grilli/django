@@ -5,8 +5,8 @@ from django.core.mail import send_mail
 
 import datetime
 
-def homepage (request):
-  return TemplateResponse(request, 'homepage.html', {})
+def resume (request):
+  return TemplateResponse(request, 'resume.html', {})
 # Create your views here.
 
 def photos (request):
