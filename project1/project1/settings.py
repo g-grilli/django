@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django_comments',
     'mptt',
     'tagging',
-    'zinnia',
 ]
 
 MIDDLEWARE = [
@@ -127,9 +126,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-SITE_ID = 1
-
-ZINNIA_ENTRY_CONTENT_TEMPLATES = [
-  ('zinnia/_short_entry_detail.html', 'Short entry template'),
-]
