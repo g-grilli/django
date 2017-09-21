@@ -3,8 +3,8 @@ from fabric.api import run, env, sudo, cd, prefix
 env.hosts = ['108.61.241.147']
 env.user = 'ggril'
 
-DIR = '/home/ggril/Django_exercise'
-VENV = 'source /home/ggril/.virtualenvs/website/bin/activate && source SECRETS.ENV'
+DIR = '/home/ggril/.ssh/django/project1'
+VENV = 'source /home/ggril/.virtualenvs/django/bin/activate && source SECRETS.ENV'
 
 def start ():
   with cd(DIR):
